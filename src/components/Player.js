@@ -6,7 +6,7 @@ import { faPlay, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-i
 const Player = ({ currentSong }) => {
     const audioRef = useRef(null);
     const playSongHandler = () => {
-        console.log(audioRef.current);
+        audioRef.current.play();
     };
     return (
         <div className="player">
