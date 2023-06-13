@@ -37,7 +37,7 @@ const timeUpdateHandler = (e) => {
     currentTime: current, 
     duration, 
     animationPercentage: animation,
-  })
+  });
 };
 
   return (
