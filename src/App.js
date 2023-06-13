@@ -31,7 +31,7 @@ const timeUpdateHandler = (e) => {
 
   return (
     <div className="App">
-      <Nav />
+      <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song currentSong = {currentSong} />
       <Player 
         audioRef={audioRef}
@@ -47,6 +47,7 @@ const timeUpdateHandler = (e) => {
         setCurrentSong={setCurrentSong}
         isPlaying={isPlaying}
         setSongs={setSongs}
+        libraryStatus={libraryStatus}
       />
       <audio
         onTimeUpdate={timeUpdateHandler} 
